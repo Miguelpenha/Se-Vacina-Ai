@@ -22,6 +22,33 @@ header {
     background-color: #932BD9;
 }
 
+header>a {
+    right: 0%;
+    width: 15%;
+    margin: 1%;
+    padding: 2%;
+    display: flex;
+    border-radius: 50%;
+    position: absolute;
+    transform: scale(0.9);
+    transition-duration: 0.2s;
+    background-color: #ffffff3b;
+    transition-timing-function: linear;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
+}
+
+header>a:hover {
+    border-radius: 25%;
+    transform: scale(1);
+    background-color: #ffffff62;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 20%);
+}
+
+header>a>svg {
+    width: 100%;
+    fill: #f1c320;
+}
+
 header>.logo {
     width: 55%;
     margin-top: 10%;
@@ -84,11 +111,17 @@ main>.start>.button:hover {
 }
 
 @media screen and (min-width: 900px) {
+    header>a {
+        width: 5%;
+        padding: 0.5%;
+    }
+
+
     header>.logo {
         width: 30%;
         margin-top: 5%;
     }
-
+    
     main>.start>.title {
         margin-top: 5%;
         font-size: 3rem;
